@@ -1,0 +1,226 @@
+body {
+    font-family: "Krona One", sans-serif;
+    background-color: #e0f2f8; 
+    animation: daytonight 5s ease-in forwards;
+    animation-delay: 0.2s;
+  }
+
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  
+  .logo {
+    font-size: 100px;
+    color: #5d4037; 
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
+  }
+  
+  .h {
+    position: relative;
+  }
+  
+  .letter.h{
+    width: 100px;
+  }
+ 
+  .smoke{
+    position: relative;
+    opacity: 0;
+    animation: rise 4s ease-in-out infinite;
+    animation-delay: 3.5s;
+  }
+
+  .cloud{
+    width: 20px;
+    height: 20px;
+    background-color: #cdd7db; 
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .cloud:nth-child(1) {
+    top: -136px;
+    left: -84px;
+  }
+
+  .cloud:nth-child(2) {
+    top: -144px;
+    left: -90px;
+  }
+
+  .cloud:nth-child(3) {
+    top: -136px;
+    left: -96px;
+  }
+
+  .cloud:nth-child(4) {
+    top: -132px;
+    left: -89px
+  }
+  
+  .windows{
+    position: relative;
+  }
+
+  .window{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border: 1px solid #5d4037;
+    animation: flicker 3s ease-in-out forwards;
+    background-color: #000329; 
+    box-shadow: none; 
+    animation-delay: 1.2s;
+  }
+
+  .window:nth-child(1) {
+    top: -35px;
+    left: -64px;
+  }
+
+  .window:nth-child(2) {
+    top: -35px;
+    left: -45px;
+  }
+
+  .window-line{
+    position: absolute;
+    top: 64px;
+    left: 40.5px;
+    width: 8px;
+    height: 9px;
+    z-index: 10;
+    border-left: 1px solid #5d4037;
+  }
+
+  .window-line2{
+    position: absolute;
+    top: 63.5px;
+    left: 36px;
+    width: 9px;
+    height: 5px;
+    z-index: 10;
+    border-bottom: 1px solid #5d4037;
+  }
+
+  .window-line3{
+    position: absolute;
+    top: 64px;
+    left: 59.5px;
+    width: 8px;
+    height: 9px;
+    z-index: 10;
+    border-left: 1px solid #5d4037;
+  }
+
+  .window-line4{
+    position: absolute;
+    top: 63.5px;
+    left: 55px;
+    width: 9px;
+    height: 5px;
+    z-index: 10;
+    border-bottom: 1px solid #5d4037;
+  }
+  
+  .shape{
+    width: 15px;
+    height: 22px;
+  }
+  
+  .shape:before,  .shape:after{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 13px;
+    border: 2px ridge #5D4037;
+    top: 2px;
+    left: 2px;  
+  }
+  
+  .doorknob{
+    position: absolute;
+    top: 9px;
+    left: 10px;  
+    width: 3px;
+    height: 3px;
+    background-color: yellow;
+  }
+  
+  .background{
+    width: 15px;
+    height: 22px;
+    position: absolute;
+    top: 77px;
+    left: 50px;
+    background-color: #cdd7db;
+  }
+  
+  .door{
+    background-color: #5d4037; 
+    position: relative;
+    transform-style: preserve-3d; 
+    perspective: 1000px; 
+    z-index: 5;
+  }
+  
+  #open-door {
+    position: absolute;
+    top: 77px;
+    left: 50px;
+    transform-origin: left;
+    animation: doorOpen 2s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes flicker {
+    0%, 50% {
+        background-color: #000329; 
+    }
+    100% {
+        background-color: #ffff99;
+        box-shadow: 0 0 10px 3px rgba(255, 255, 153, 0.5);
+    }
+}
+
+  @keyframes doorOpen {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(-180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes daytonight {
+  0%, 50% {
+      background-color: #e0f2f8; 
+  }
+  100% {
+      background-color: #0f0f24;
+  }
+}

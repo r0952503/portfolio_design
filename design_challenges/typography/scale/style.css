@@ -1,0 +1,25 @@
+ body{
+  background-color:#d9ead3;
+ }
+ 
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+ 
+ .scale {
+   position: absolute;
+   background: url(images/spritesheet.png) 0 0 no-repeat;
+   width: 325px;
+   height: 239px;
+   animation: move 4s steps(32) infinite ;
+    
+   
+  }
+  @keyframes move {
+     0% { background-position: 0 0; }
+     100% { background-position: -10402px 0;}
+   }
+   

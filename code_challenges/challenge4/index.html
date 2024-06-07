@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Catcher Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+ 
+        
+</head>
+<body>
+    <div id="startScreen">
+        <h1>Fruit Catcher Game</h1>
+        <p>Catch the falling fruits by tilting your device!</p>
+        <button id="playButton">Play</button>
+         <button id="motion" type="button">Enable Motion Detection</button>
+    </div>
+    <div id="endScreen">
+        <h1>Game Over</h1>
+        <p id="finalScore">Your score: 0</p>
+        <button id="replayButton">Replay</button>
+    </div>
+    
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+   
+
+    <script src="motion-helper.js"></script>
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>

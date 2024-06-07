@@ -1,0 +1,199 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 10%;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    left: 0; 
+    z-index: 999;
+    
+}
+
+nav p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navLogo {
+    width: 200px;
+    height: auto;
+    background-image: url("images/logo_black.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.head1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: fixed; 
+    width: 100%; 
+    top: 100px; 
+    background-color: white; 
+    z-index: 998; 
+}
+
+.BoA {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.BoA p {
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.bezorg {
+    color: white;
+    font-size: 24px;
+    padding: 25px 75px;
+    background-color: #007AAF;
+    border-radius: 12px;
+}
+
+.afhalen {
+    color: white;
+    font-size: 24px;
+    padding: 25px 75px;
+    background-color: #D0021B;
+    border-radius: 8px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bigImg {
+    width: 100%;
+    margin-top: 230px;
+}
+
+.articles {
+    margin: 0px 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+article {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    color: #454557;
+    text-align: center;
+    line-height: 2;
+}
+
+article a {
+    text-decoration: none;
+    color: white;
+    background-color: #D0021B;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.small {
+    padding: 15px 10px;
+}
+
+.blue {
+    background-color: #007AAF;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.holder {
+    margin-top: 50px;
+    padding-top: 5px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.holder1 {
+    background-color: #F7F8E3;
+}
+
+.big {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    margin: 50px 0px;
+}
+
+footer > * {
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 15%;
+}
+
+.infoFooter div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h4 {
+    font-size: 24px;
+}
+
+/* Add this CSS to define the fall animation */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.fall-down {
+    animation: fall 4s ease forwards;
+}
+

@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #8dc6bc;
+}
+
+#gameCanvas {
+    display: none;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#startScreen, #endScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#playButton, #replayButton, #motion {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#playButton:hover, #replayButton:hover, #motion:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#playButton:active, #replayButton:active, #motion:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+
+#motion {
+    background-color: #2196F3;
+}
+
+#motion:hover {
+    background-color: #1e88e5;
+}
+
+#motion:active {
+    background-color: #1976d2;
+}
+
+#endScreen {
+    display: none;
+}

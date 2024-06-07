@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #AAC6CE;
+    overflow: hidden;  /* To prevent scrollbars during animation */
+}
+
+.animation-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.satellite-image {
+    width: 300px;
+    height: auto;
+    animation: spin 10s linear infinite;
+}
+
+.star-trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    animation: star-appear 3s linear infinite;
+    opacity: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes star-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(calc(var(--random-y) * 1px)) translateX(calc(var(--random-x) * 1px));
+    }
+}
+
+#star1 {
+    --random-x: 200;
+    --random-y: 50;
+    animation-delay: 1s;
+}
+
+#star2 {
+    --random-x: -100;
+    --random-y: -80;
+    animation-delay: 3s;
+}
+
+#star3 {
+    --random-x: 80;
+    --random-y: -150;
+    animation-delay: 5s;
+}

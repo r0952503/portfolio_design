@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white; 
+    animation: changeBackgroundColor 1s 1s forwards;
+}
+
+@keyframes changeBackgroundColor {
+    0% { background-color: white; } 
+    100% { background-color: #AD88C6 } 
+}
+
+@keyframes changeImage {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+img#changingImage {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+@keyframes changeImageSrc {
+    0%, 100% { content: url('images/1.png'); }
+    3.125% { content: url('images/2.png'); }
+    6.25% { content: url('images/3.png'); }
+    9.375% { content: url('images/4.png'); }
+    12.5% { content: url('images/5.png'); }
+    15.625% { content: url('images/6.png'); }
+    18.75% { content: url('images/7.png'); }
+    21.875% { content: url('images/8.png'); }
+    25% { content: url('images/9.png'); }
+    28.125% { content: url('images/10.png'); }
+    31.25% { content: url('images/11.png'); }
+    34.375% { content: url('images/12.png'); }
+    37.5% { content: url('images/13.png'); }
+    40.625% { content: url('images/14.png'); }
+    43.75% { content: url('images/15.png'); }
+    46.875% { content: url('images/16.png'); }
+    50% { content: url('images/17.png'); }
+    53.125% { content: url('images/18.png'); }
+    56.25% { content: url('images/19.png'); }
+    59.375% { content: url('images/20.png'); }
+    62.5% { content: url('images/21.png'); }
+    65.625% { content: url('images/22.png'); }
+    68.75% { content: url('images/23.png'); }
+    71.875% { content: url('images/24.png'); }
+    75% { content: url('images/25.png'); }
+    78.125% { content: url('images/26.png'); }
+    81.25% { content: url('images/27.png'); }
+    84.375% { content: url('images/28.png'); }
+    87.5% { content: url('images/29.png'); }
+    90.625% { content: url('images/30.png'); }
+    93.75% { content: url('images/31.png'); }
+    96.875% { content: url('images/32.png'); }
+    100% { content: url('images/32.png'); }
+}
+
+img#changingImage {
+    animation: changeImageSrc 1.5s forwards;
+}
+

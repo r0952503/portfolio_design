@@ -1,0 +1,117 @@
+body {
+    background-color: #fffdd0;
+    overflow: hidden;
+}
+
+#kraan {
+    margin-top: 82px;
+    width: 200px;
+    margin-left: -10px;
+}
+
+#mounth {
+    width: 250px;
+    position: absolute;
+    bottom: -70px;
+    right: -25px;
+}
+
+#bottle {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#drop {
+    margin-top: 82px;
+    width: 20px;
+    position: absolute;
+    left: 170px;
+    top: 160px;
+    z-index: -1;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#tone {
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    display: none;
+}
+
+#thanks {
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    display: none;
+}
+
+#links a {
+    text-decoration: none;
+    color: #FBB040;
+    border: 1px solid #FBB040;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#links a:hover {
+    background-color: #FBB040;
+    color: #fffdd0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #kraan {
+        width: 100px;
+        margin-top: 40px;
+        margin-left: -5px;
+    }
+
+    #mounth {
+        width: 150px;
+        bottom: -50px;
+        right: -15px;
+    }
+
+    #bottle {
+        width: 50px;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #drop {
+        width: 15px;
+        left: 86px;
+        top: 77px;
+    }
+
+    #links {
+        font-size: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #links a {
+        padding: 5px 10px;
+        margin: 5px 0;
+    }
+
+    #tone, #thanks {
+        width: 200px;
+        right: 10px;
+        top: 80px;
+    }
+}

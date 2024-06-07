@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: blanchedalmond;
+  }
+  
+  #pointer {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-image: url('hand.png'); /* You need to have a hand image */
+    background-size: contain;
+    transform-origin: bottom right;
+    pointer-events: none; 
+    transform: translate(-92%, -40%);
+
+  }
+  

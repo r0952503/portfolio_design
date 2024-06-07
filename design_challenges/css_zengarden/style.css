@@ -1,0 +1,254 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+/* Base Styles */
+/* Basic Styles and Art Deco Elements */
+/* Base Styles */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Body and Headers */
+body {
+  font-family: 'Alfa Slab One', sans-serif;
+  color: #CCAC00;
+  background-color: black;
+  background-image: url('images/Illustrator2AD.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+  
+}
+
+  /* Headers */
+  h1, h2, h3 {
+	font-family: 'Cinzel', serif;
+	text-transform: uppercase;
+  }
+  
+  h1 {
+	font-size: 3em;
+	font-weight: bold;
+	color: #CCAC00;
+	text-align: center;
+	position: relative;
+	padding-bottom: 0.5em;
+  }
+  
+  h1::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 5px;
+	width: 150px;
+	background: #CCAC00;
+	border-radius: 5px;
+  }
+  
+  h2 {
+	font-size: 1.5em;
+	color: #CCAC00;
+	text-align: center;
+	padding-top: 0.5em;
+  }
+  
+  h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #CCAC00;
+	position: relative;
+	padding-bottom: 0.3em;
+  }
+  
+  h3::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 3px;
+	width: 100px;
+	background: #CCAC00;
+  }
+  
+  a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  
+  .page-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 15px solid transparent; /* invisible space */
+	outline: 4px solid #92824f;
+	outline-offset: -10px; /* first box */
+	background: linear-gradient(#3f502f 0 0) top,
+		 linear-gradient(#92824f 0 0) left, linear-gradient(#3f502f 0 0) bottom,
+		 linear-gradient(#92824f 0 0) right;
+	background-size: 200% 4px, 4px 200%; /* second box */
+	background-origin: padding-box;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0.5); 
+}
+	
+  /* Intro Section */
+  .intro {
+	background: linear-gradient black;
+	color: #CCAC00;
+	padding: 40px;
+	text-align: center;
+	position: relative;
+  }
+  
+  .intro::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 10px;
+	width: 200px;
+	background: linear-gradient(to right, #CCAC00, transparent, #CCAC00);
+  }
+  
+  .intro::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 10px;
+	width: 200px;
+	background: linear-gradient(to right, #CCAC00, transparent, #CCAC00);
+  }
+  
+  .summary {
+	margin: 20px 0;
+  }
+  
+  .preamble {
+	margin: 20px 0;
+	position: relative;
+  }
+  
+  .preamble::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 3px;
+	width: 100px;
+	background: #CCAC00;
+  }
+  
+  /* Main Content */
+  .main {
+	padding: 20px;
+	border-top: 3px solid #CCAC00;
+	border-bottom: 3px solid #CCAC00;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+	background-color: white;
+	color: #CCAC00;
+	padding: 20px;
+	position: relative;
+  }
+  
+  .sidebar::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 10px;
+	width: 200px;
+	background: linear-gradient(to right, #CCAC00, transparent, #CCAC00);
+	transform: translateX(-50%);
+  }
+  
+  .sidebar a {
+	color: #CCAC00;
+  }
+  
+  .sidebar h3 {
+	text-transform: uppercase;
+	color: #CCAC00;
+  }
+  
+  .sidebar .design-selection, .design-archives, .zen-resources {
+	border-bottom: 2px solid #CCAC00;
+	margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+	
+	color: black;
+	padding: 20px;
+	text-align: center;
+	border-top: 3px solid #CCAC00;
+	position: relative;
+  }
+  
+  footer::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 10px;
+	width: 200px;
+	background: linear-gradient(to right, #CCAC00, transparent, #CCAC00);
+	transform: translateX(-50%);
+  }
+  
+  footer a {
+	color: #CCAC00;
+	margin: 0 10px;
+	text-decoration: none;
+  }
+  
+  footer a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+	.page-wrapper {
+	  padding: 10px;
+	}
+  
+	.main, .sidebar {
+	  padding: 10px;
+	}
+  
+	h1 {
+	  font-size: 2.5em;
+	}
+  
+	h2 {
+	  font-size: 1.2em;
+	}
+  
+	h3 {
+	  font-size: 1em;
+	}
+  }
+  
